@@ -1,0 +1,367 @@
+
+
+ /* variables  */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+a{
+    display : inline-block;
+    text-decoration: none;
+}
+
+body{
+    font-size: 18px;
+    font-Family: Bai Jamjuree;
+}
+
+:is(h1,h2,h3){
+    color:  hsl(200, 7%, 27%);
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 23px;
+}
+
+p{
+    color: hsl(201, 11%, 66%);
+    font-size:18px;
+    line-height: 1.7;
+}
+
+
+/* main style */
+
+
+.container{
+    max-width: 1448px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+/*  header */
+
+
+.header{
+    background: url(/images/bg-header-desktop.png)no-repeat;
+    background-size: contain;
+    padding: 130px 160px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+
+.header-logo{
+    display: block;
+    margin: auto;
+    margin-bottom: 55px;
+    padding-top:50px ;
+}
+
+
+:is(header) > p{
+    max-width: 690px;
+    margin: auto;
+    text-align: center;
+}
+
+header > p{
+    font-size: 20px;
+    margin-bottom: 50px !important;
+    line-height: 1.5;
+}
+
+
+/*  action_button  */
+
+.action_button {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+.action_button .download_iOS{
+background-color:hsl(171, 66%, 44%);
+box-shadow: 2px 2px 8px hsl(171, 66%, 44%), 2px 2px 8px hsl(171, 66%, 44%);
+border-radius: 100px;
+color:#fff;
+font-size:18px;
+outline: none;
+border: none;
+margin: 0 10px;
+padding: 10px 25px;
+color: #fff;
+cursor: pointer;
+margin-bottom: 5%;
+
+}
+
+.action_button  .download_mac{
+background-color:hsl(233, 100%, 69%);
+border-radius: 100px;
+box-shadow: 2px 2px 8px hsl(233, 100%, 65%), 2px 2px 8px hsl(233, 100%, 65%);
+color: #fff;
+font-size:18px;
+outline: none;
+border: none;
+margin: 0 10px;
+padding: 10px 25px;
+color: #fff;
+cursor: pointer;
+margin-bottom: 5%;
+}
+
+/*  one  */
+
+.one {
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+
+.one h2{
+    padding: 15px 0;
+}
+
+/*  two  */
+
+.two{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 50px 0;
+}
+
+
+.two img{
+    height: 350px;
+    margin: auto;
+}
+
+
+.two .features div{
+    margin-top: 40px;
+    width: 65%;
+}
+
+
+/*  three  */
+
+.three {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.three img {
+    height: 450px;
+    margin: auto;
+}
+
+.three div:first-child {
+    padding: 70px 0;
+    width: 65%;
+    margin: auto;
+}
+
+
+/*  four  */
+
+.four .functions {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.four .functions div {
+    width: 26%;
+    margin: 0 30px;
+}
+
+.four .functions div img{
+    margin: 10px 0 20px 0;
+}
+
+.four .support_companys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10%;
+}
+
+.four .support_companys .google {
+    margin-left: 20px;
+}
+
+
+.four .support_companys .ibm {
+    margin-left: 20px;
+}
+
+
+.four .support_companys .microsoft {
+    margin-left: 20px;
+}
+
+
+.four .support_companys .hp {
+    margin-left: 20px;
+}
+
+.four .support_companys .vector {
+    margin-left: 20px;
+}
+
+.five {
+    text-align: center;
+    width: 46%;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 10%;
+}
+
+
+/*  footer  */
+
+
+footer .foot {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+}
+
+footer .logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 70px;
+}
+
+footer ul {
+
+    list-style: none;
+    max-width: 400px;
+}
+
+
+ul li {
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+
+a{
+    color: hsl(201, 11%, 66%);
+}
+
+
+@media (max-width: 765px) {
+    .header{
+        background: url(/images/bg-header-mobile.png);
+        background-size: cover;
+        padding: 40px 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .one {
+        width: 80%;
+    }
+
+    .two {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .two .features div {
+        width: 70%;
+        margin: 60px 12% auto;
+        text-align: center;
+    }
+
+    .three div:first-child {
+        width: 75%;
+    }
+
+    .four .functions {
+        display: grid;
+    }
+
+    .four .functions div {
+        width: 85%;
+     
+    }
+
+    .four .support_companys {
+        display: grid;
+        grid-gap:4em;
+        justify-content: center;
+        align-items: center;
+       
+       
+    }
+
+    .five {
+        width: 84%;
+    }
+
+    .action_button {
+        margin: 15px 20px;
+
+    }
+
+    
+
+    footer .foot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    ul li {
+        display: grid;
+        margin: 20px 0;
+    }
+
+    .social_link a {
+        margin: 10px;
+        justify-content: center;
+       
+    }
+
+
+}
+
